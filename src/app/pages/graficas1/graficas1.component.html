@@ -1,3 +1,53 @@
-<p>
-  graficas1 works!
-</p>
+<div class="row">
+
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+          <h4 class="card-title">{{graficos.graficos1.leyenda}}</h4>
+        <app-grafico-dona 
+          [ChartLabels] = "graficos.graficos1.labels"
+          [ChartData] = "graficos.graficos1.data"
+          ChartType = "doughnut"
+        ></app-grafico-dona>
+         
+
+      </div>
+    </div>
+  </div>
+
+    <div class="col-6">
+      <div class="card">
+        <div class="card-body">
+          <h4 class="card-title">{{graficos.graficos2.leyenda}}</h4>
+        <app-grafico-dona [ChartLabels]="graficos.graficos2.labels" [ChartData]="graficos.graficos2.data" ChartType="doughnut"></app-grafico-dona>
+    
+        </div>
+      </div>
+    </div>
+
+
+</div>
+
+<div class="row">
+
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">{{graficos.graficos3.leyenda}}</h4>
+        <app-grafico-dona [ChartLabels]="graficos.graficos3.labels" [ChartData]="graficos.graficos3.data" ChartType="doughnut"></app-grafico-dona>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="col-6">
+    <div class="card">
+      <div class="card-body">
+        <h4 class="card-title">{{graficos.graficos4.leyenda}}</h4>
+        <app-grafico-dona [ChartLabels]="graficos.graficos4.labels" [ChartData]="graficos.graficos4.data" ChartType="doughnut"></app-grafico-dona>
+
+      </div>
+    </div>
+  </div>
+
+</div>
